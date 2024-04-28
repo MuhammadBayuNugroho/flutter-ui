@@ -16,37 +16,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Belajar Row"),
+        ),
         body: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
+          child: Row(
             children: [
-              const Text(
-                "Belajar Layout Column",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              const Text(
-                "Stylish Chair",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              const SizedBox(height: 10),
-              const Text(
-                "Rp. 350.000",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Color(0xFF9A9390),
-                  fontWeight: FontWeight.w400,
-                  letterSpacing: 1,
-                ),
-              ),
-              const Text("\n\n-------------------\nBelajar ROW"),
               Container(
                 padding: const EdgeInsets.all(10.0),
                 child: Row(
